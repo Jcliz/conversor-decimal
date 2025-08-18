@@ -1,9 +1,11 @@
-def transformar_binario(valor):
+def converter_binario(valor):
     numero = bin(valor)[2:]
     print(numero)
 
 
-def transformar_octal(valor):
-    
+def converter_octal(valor):
+    numero = oct(valor)[2:]
+    print(numero)
 
-def transformar_hexadecimal(valor):
+
+def converter_hexadecimal(valor):
