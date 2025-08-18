@@ -9,3 +9,5 @@ def converter_octal(valor):
 
 
 def converter_hexadecimal(valor):
+    numero = hex(valor)[2:].upper()
+    print(numero)
