@@ -1,13 +1,20 @@
 def converter_binario(valor):
-    numero = bin(valor)[2:]
-    print(numero)
+    return bin(valor)[2:]
 
 
 def converter_octal(valor):
-    numero = oct(valor)[2:]
-    print(numero)
+    return oct(valor)[2:]
+
 
 
 def converter_hexadecimal(valor):
-    numero = hex(valor)[2:].upper()
-    print(numero)
+    return hex(valor)[2:].upper()
+
+def __init__():
+    numero = int(input("Digite um número decimal inteiro: "))
+    print(f"Seu número: {numero}\n")
+    print(f"Em binário: {converter_binario(numero)}\n")
+    print(f"Em octal: {converter_octal(numero)}\n")
+    print(f"Em hexadecimal: {converter_hexadecimal(numero)}\n")
+
+__init__()
